@@ -6,27 +6,19 @@ body {
 	border-radius: 10px;
 }
 
-.container.loading.loading0 {
+.container.project.subproject {
 	padding: 20px;
 	border-radius: 10px;
 	background-color: #1c344dba;
 }
 
-.progress {
-	height: 20px;
-	border-radius: 10px;
-}
 
-.progress-bar.progress-bar-striped.progress-bar-animated {
-	animation: loading0-progressbar 5s infinite 0s;
-}
-
-@keyframes loading0-progressbar {
+@keyframes subproject-animation-function {
     from {
-        width: 0%;
+
     }
 
     to {
-        width: 100%;
+
     }
 }
