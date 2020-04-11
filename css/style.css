@@ -18,7 +18,7 @@ body {
 }
 
 .container.character-outline {
-    font-size: 120px;
+    font-size: 175px;
     font-weight: lighter;
     display: flex;
     margin: 0px;
@@ -43,6 +43,8 @@ body {
     stroke-linecap: round;
     stroke-dasharray: 0 300;
     stroke-dashoffset: 0;
+    box-shadow:    0px 0px 20px rgba(255, 255, 255, 0.66)
+
 }
 
 .text:nth-child(4n + 1) {
@@ -87,13 +89,13 @@ body {
     }
 }
 
-
 .container.character-svg {
     font-size: 120px;
     font-weight: lighter;
     display: flex;
     margin: 0px;
-    padding: 50px;
+    margin-bottom: 10px;
+    padding: 30px;
     text-transform: uppercase;
     letter-spacing: 10px;
     background-color: rgb(48, 48, 48);
@@ -111,14 +113,15 @@ body {
 
 .svg-text-line {
     fill: none;
-    stroke-width: 10;
+    stroke-width: 5;
     stroke-linejoin: round;
     stroke-linecap: round;
     stroke-dasharray: 0 1000;
     stroke-dashoffset: 0;
     position: absolute;
     left: 0px;
-    transform: translate(40px,-10px) scale(0.8);
+    transform: translate(-40px, -40px);
+    /* scale(0.8); */
 }
 
 .svg-text-line:nth-child(4n + 1) {
@@ -139,11 +142,11 @@ body {
 }
 
 @keyframes character2-svg-line1 {
-    0%{
+    0% {
         fill: aliceblue;
         fill-opacity: 0;
     }
-    50%{
+    50% {
         fill: aliceblue;
         fill-opacity: 0;
     }
@@ -156,11 +159,11 @@ body {
     }
 }
 @keyframes character2-svg-line2 {
-    0%{
+    0% {
         fill: aliceblue;
         fill-opacity: 0;
     }
-    50%{
+    50% {
         fill: aliceblue;
         fill-opacity: 0;
     }
@@ -174,11 +177,11 @@ body {
     }
 }
 @keyframes character2-svg-line3 {
-    0%{
+    0% {
         fill: aliceblue;
         fill-opacity: 0;
     }
-    50%{
+    50% {
         fill: aliceblue;
         fill-opacity: 0;
     }
@@ -192,11 +195,11 @@ body {
     }
 }
 @keyframes character2-svg-line4 {
-    0%{
+    0% {
         fill: aliceblue;
         fill-opacity: 0;
     }
-    50%{
+    50% {
         fill: aliceblue;
         fill-opacity: 0;
     }
@@ -213,5 +216,154 @@ body {
     100% {
         stroke-dashoffset: 1800;
         stroke-dasharray: 1000 0;
+    }
+}
+
+.container.character-spotlight {
+    font-size: 120px;
+    font-weight: lighter;
+    display: flex;
+    margin: 0px;
+    margin-bottom: 10px;
+    padding: 30px;
+    text-transform: uppercase;
+    letter-spacing: 10px;
+    background-color: rgb(48, 48, 48);
+    border-radius: 5px;
+}
+
+.container.character-spotlight svg {
+    /* position: relative; */
+    width: 100%;
+    height: 100%;
+    /* background-color: blue; */
+    /* padding: 100px; */
+    margin: 0px;
+}
+
+#logo-spotlight {
+    fill: #333;
+}
+
+.svg-spotlight-light {
+    transform: translate(-33px, -11px);
+    /* fill: none; */
+    fill: aliceblue;
+    animation: character3-spotlight 6s infinite 0s;
+}
+
+@keyframes character3-spotlight {
+    0% {
+        -webkit-clip-path: ellipse(100px 100px at 0% 50%);
+        clip-path: ellipse(100px 100px at 0% 50%);
+        fill: none;
+    }
+    30% {
+        -webkit-clip-path: ellipse(100px 100px at 0% 50%);
+        clip-path: ellipse(100px 100px at 0% 50%);
+        fill: aliceblue;
+    }
+    50% {
+        -webkit-clip-path: ellipse(100px 100px at 87% 50%);
+        clip-path: ellipse(100px 100px at 86% 50%);
+    }
+    70% {
+        -webkit-clip-path: ellipse(100px 100px at 50% 50%);
+        clip-path: ellipse(100px 100px at 50% 50%);
+    }
+    100% {
+        -webkit-clip-path: ellipse(1000px 1000px at 50% 50%);
+        clip-path: ellipse(1000px 1000px at 50% 50%);
+    }
+}
+
+.container.character-spotlight-neon {
+    font-size: 120px;
+    font-weight: lighter;
+    display: flex;
+    margin: 0px;
+    margin-bottom: 10px;
+    padding: 30px;
+    text-transform: uppercase;
+    letter-spacing: 10px;
+    background-color: rgb(48, 48, 48);
+    border-radius: 5px;
+}
+
+.container.character-spotlight-neon svg {
+    /* position: relative; */
+    width: 100%;
+    height: 100%;
+    /* background-color: blue; */
+    /* padding: 100px; */
+    margin: 0px;
+}
+
+#logo-spotlight-neon {
+    fill: #333;
+}
+
+.svg-spotlight-neon-light {
+    transform: translate(-33px, -11px);
+    fill: none;
+    /* fill: aliceblue; */
+    /* animation: character4-spotlight 6s infinite 0s; */
+    /* animation: character4-neon 6s infinite 0s; */
+
+}
+.svg-spotlight-neon-light:nth-child(2n) {
+    transform: translate(-33px, -11px);
+    /* fill: none; */
+    fill: aliceblue;
+    animation: character4-spotlight 6s infinite 0s;
+}
+
+.svg-spotlight-neon-light:nth-child(2n+2) {
+    transform: translate(-33px, -11px);
+    /* fill: #333; */
+    /* animation: character4-neon 6s infinite 0s; */
+}
+
+@keyframes character4-spotlight {
+    0% {
+        -webkit-clip-path: ellipse(100px 100px at 0% 50%);
+        clip-path: ellipse(100px 100px at 0% 50%);
+        fill: none;
+    }
+    30% {
+        -webkit-clip-path: ellipse(100px 100px at 0% 50%);
+        clip-path: ellipse(100px 100px at 0% 50%);
+        fill: aliceblue;
+    }
+    50% {
+        -webkit-clip-path: ellipse(100px 100px at 87% 50%);
+        clip-path: ellipse(100px 100px at 86% 50%);
+    }
+    70% {
+        -webkit-clip-path: ellipse(100px 100px at 50% 50%);
+        clip-path: ellipse(100px 100px at 50% 50%);
+    }
+    100% {
+        -webkit-clip-path: ellipse(1000px 1000px at 50% 50%);
+        clip-path: ellipse(1000px 1000px at 50% 50%);
+    }
+}
+
+@keyframes character4-neon {
+    /* 0% {
+    }
+    10% {
+    }
+    20% {
+    }
+    30% {
+    } */
+    100% {
+        fill: aqua;
+        box-shadow: 0 0 10px #fff,
+                    0 0 20px #fff,
+                    0 0 40px #fff,
+                    0 0 80px #fff,
+                    0 0 160px #fff;
     }
 }
