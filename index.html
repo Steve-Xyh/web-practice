@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html lang="en">
     <head>
-        <title>anim0_loading0 Progress Bar</title>
+        <title>anim1_character0 examples</title>
         <link
             rel="stylesheet"
             href="node_modules/bootstrap/dist/css/bootstrap.min.css"
@@ -15,8 +15,9 @@
                 class="alert alert-warning alert-dismissible fade show"
                 role="alert"
             >
-				<strong>js加载测试</strong>
-				(如果可以关闭此提醒则 <code>jquery, bootstrap.js</code> 加载成功)
+                <strong>js加载测试</strong>
+                (如果可以关闭此提醒则
+                <code>jquery, bootstrap.js</code> 加载成功)
                 <button
                     type="button"
                     class="close"
@@ -30,17 +31,83 @@
                 class="alert alert-success alert-dismissible fade show"
                 role="alert"
             >
-                <strong>CSS 动画[序号] [项目名称]</strong>
+                <strong>CSS 动画1 字体特效</strong>
                 <hr />
-                项目描述
+                <code
+                    ><a href="https://www.bilibili.com/video/BV16p4y117k1"
+                        >https://www.bilibili.com/video/BV16p4y117k1</a
+                    ></code
+                >
+                <code><a href=""></a></code>
             </div>
 
-            <div class="container project subproject">
+            <div class="container character character0">
+                <div class="row">
+                    <div class="col-12">
+                        <div class="container character-outline">
+                            <svg class="item" viewBox="0 0 1000 300">
+                                <symbol id="line-text">
+                                    <text
+                                        text-anchor="middle"
+                                        x="50%"
+                                        y="46%"
+                                        dy=".4em"
+                                    >
+                                        Steve X
+                                    </text>
+                                </symbol>
 
+                                <use xlink:href="#line-text" class="text"></use>
+                                <use xlink:href="#line-text" class="text"></use>
+                                <use xlink:href="#line-text" class="text"></use>
+                                <use xlink:href="#line-text" class="text"></use>
+                            </svg>
+                        </div>
+                    </div>
+                    <div class="col-12">
+                        <div class="container character-svg">
+                            <?xml version="1.0" encoding="UTF-8"?>
+                            <svg
+                                width="1000px"
+                                height="200px"
+                                viewBox="0 0 710 201"
+                                version="1.1"
+                                xmlns="http://www.w3.org/2000/svg"
+                                xmlns:xlink="http://www.w3.org/1999/xlink"
+                            >
+                                <!-- Generator: Sketch 63.1 (92452) - https://sketch.com -->
+                                <title>logo</title>
+                                <desc>Steve X logo Created with Sketch.</desc>
+                                <g
+                                    id="页面-1"
+                                    stroke="none"
+                                    stroke-width="1"
+                                    fill="none"
+                                    fill-rule="evenodd"
+                                >
+                                    <g
+                                        id="logo"
+                                        fill="none"
+                                    >
+                                        <path
+                                            d="M649.5,40 C705.004617,40 750,84.9953826 750,140.5 C750,196.004617 705.004617,241 649.5,241 C593.995383,241 549,196.004617 549,140.5 C549,84.9953826 593.995383,40 649.5,40 Z M92.2,66.4 C107,66.4 119,70.4 127.8,78.4 C136.6,86.4 141.8,97.4 143,111.4 L143,111.4 L138.2,111.4 C137,98.6 132.4,88.8 124.6,81.8 C116.6,74.6 105.8,71.2 92.2,71.2 C79,71.2 68.4,73.6 60.6,78.8 C52,84.2 47.8,92 47.8,102.4 C47.8,111.6 53,119 63.6,124.4 C68.4,126.8 78.2,130 93,134 C110.4,138.4 122.6,142.8 129.4,147.2 C140.6,154 146.4,164 146.4,176.8 C146.4,188.6 141.2,198 131,205 C121.4,211.4 109,214.8 94,214.8 C78.4,214.8 66,210.8 56.8,202.8 C46.8,194 41.2,181.4 40,164.8 L40,164.8 L44.6,164.8 C45.8,179.8 51,191.2 60.2,199.2 C68.6,206.4 79.8,210 93.8,210 C107.8,210 119.2,207 128.2,201 C137,195 141.6,186.8 141.6,176.8 C141.6,165.6 136.4,156.8 126.2,150.8 C120,147 108.6,143 92.2,138.8 C75.6,134.4 64.6,130.6 59.4,127.8 C48.4,121.8 43,113.2 43,102.4 C43,90.2 48,81 58.2,74.8 C67,69.2 78.2,66.4 92.2,66.4 Z M275.4,105.8 C291.2,105.8 303,111.2 310.8,122 C317.4,131.2 321.2,144.6 322,162 L322,162 L233.8,162 C234.2,176.4 238,188 245.6,196.8 C253.2,205.6 263,210 275.4,210 C286.6,210 295.4,206.8 302.2,200.8 C307.8,195.6 312,188.2 314.4,178.8 L314.4,178.8 L319.6,178.8 C317.2,189.2 312.6,197.4 306.2,203.6 C298.2,211 288,214.8 275.4,214.8 C261.2,214.8 250,209.6 241.6,199.6 C233.2,189.4 229,176.2 229,160.2 C229,145.2 233,132.6 241.2,122.4 C249.8,111.2 261.2,105.8 275.4,105.8 Z M470.8,105.8 C486.6,105.8 498.4,111.2 506.2,122 C512.8,131.2 516.6,144.6 517.4,162 L517.4,162 L429.2,162 C429.6,176.4 433.4,188 441,196.8 C448.6,205.6 458.4,210 470.8,210 C482,210 490.8,206.8 497.6,200.8 C503.2,195.6 507.4,188.2 509.8,178.8 L509.8,178.8 L515,178.8 C512.6,189.2 508,197.4 501.6,203.6 C493.6,211 483.4,214.8 470.8,214.8 C456.6,214.8 445.4,209.6 437,199.6 C428.6,189.4 424.4,176.2 424.4,160.2 C424.4,145.2 428.4,132.6 436.6,122.4 C445.2,111.2 456.6,105.8 470.8,105.8 Z M186.4,75.2 L186.4,108.6 L216,108.6 L216,113.4 L186.4,113.4 L186.4,191 C186.4,197 187.4,201.2 189.4,203.6 C191.2,206 195,207.2 200.8,207.2 L200.8,207.2 L213.6,207.2 L213.6,212 L200.8,212 C193.2,212 188,210 185.2,206.4 C182.8,203.2 181.6,198 181.6,191 L181.6,191 L181.6,113.4 L157.4,113.4 L157.4,108.6 L181.6,108.6 L181.6,77.4 L186.4,75.2 Z M335.6,108.6 L373.2,205.6 L410.8,108.6 L416.4,108.6 L376,212 L370.4,212 L330,108.6 L335.6,108.6 Z M603.2,69.2 L596.8,69.2 L647.2,137.4 L592,212 L598.4,212 L650.2,141.2 L702,212 L708.4,212 L653.2,137.4 L703.6,69.2 L697.2,69.2 L650.2,133.4 L603.2,69.2 Z M275.4,110.6 C263.4,110.6 253.6,115 246,124 C238.4,132.8 234.4,144 233.8,157.2 L233.8,157.2 L317,157.2 C314.8,126 301,110.6 275.4,110.6 Z M470.8,110.6 C458.8,110.6 449,115 441.4,124 C433.8,132.8 429.8,144 429.2,157.2 L429.2,157.2 L512.4,157.2 C510.2,126 496.4,110.6 470.8,110.6 Z"
+                                            id="svg-text"
+                                        ></path>
+                                    </g>
+                                </g>
+                                <use xlink:href="#svg-text" class="svg-text-line"></use>
+                                <use xlink:href="#svg-text" class="svg-text-line"></use>
+                                <use xlink:href="#svg-text" class="svg-text-line"></use>
+                                <use xlink:href="#svg-text" class="svg-text-line"></use>
+                            </svg>
+                        </div>
+                    </div>
+                    <div class="col-12">Third</div>
+                </div>
             </div>
         </div>
         <script src="node_modules/jquery/dist/jquery.slim.min.js"></script>
-        <script src="node_modules/popper/farms/ /dist/umd/popper.min.js"></script>
+        <!-- <script src="node_modules/popper/ /dist/umd/popper.min.js"></script> -->
         <script src="node_modules/bootstrap/dist/js/bootstrap.min.js"></script>
     </body>
 </html>

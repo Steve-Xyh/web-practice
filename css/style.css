@@ -1,24 +1,217 @@
+* {
+    padding: 0;
+    margin: 0;
+}
+
 body {
     background-color: aliceblue;
 }
 
 .alert {
-	border-radius: 10px;
+    border-radius: 10px;
 }
 
-.container.project.subproject {
-	padding: 20px;
-	border-radius: 10px;
-	background-color: #1c344dba;
+.container.character {
+    padding: 20px;
+    border-radius: 10px;
+    background-color: #b1d7ffba;
+}
+
+.container.character-outline {
+    font-size: 120px;
+    font-weight: lighter;
+    display: flex;
+    margin: 0px;
+    margin-bottom: 10px;
+    text-transform: uppercase;
+    letter-spacing: 10px;
+    background-color: rgb(48, 48, 48);
+    border-radius: 5px;
+}
+
+.container.character-outline svg {
+    /* position: absolute; */
+    width: 100%;
+    height: 100%;
+    /* background-color: aliceblue; */
+}
+
+.text {
+    fill: none;
+    stroke-width: 1;
+    stroke-linejoin: round;
+    stroke-linecap: round;
+    stroke-dasharray: 0 300;
+    stroke-dashoffset: 0;
+}
+
+.text:nth-child(4n + 1) {
+    stroke: rgb(39, 135, 238);
+    animation: character1-line1 5s infinite forwards;
+}
+.text:nth-child(4n + 2) {
+    stroke: rgb(249, 189, 56);
+    animation: character1-line2 5s infinite forwards;
+}
+.text:nth-child(4n + 3) {
+    stroke: rgb(235, 61, 50);
+    animation: character1-line3 5s infinite forwards;
+}
+.text:nth-child(4n + 4) {
+    stroke: rgb(47, 169, 92);
+    animation: character1-line4 5s infinite forwards;
+}
+
+@keyframes character1-line1 {
+    100% {
+        stroke-dashoffset: 1000;
+        stroke-dasharray: 100 300;
+    }
+}
+@keyframes character1-line2 {
+    100% {
+        stroke-dashoffset: 1100;
+        stroke-dasharray: 100 300;
+    }
+}
+@keyframes character1-line3 {
+    100% {
+        stroke-dashoffset: 1200;
+        stroke-dasharray: 100 300;
+    }
+}
+@keyframes character1-line4 {
+    100% {
+        stroke-dashoffset: 1300;
+        stroke-dasharray: 100 300;
+    }
 }
 
 
-@keyframes subproject-animation-function {
-    from {
+.container.character-svg {
+    font-size: 120px;
+    font-weight: lighter;
+    display: flex;
+    margin: 0px;
+    padding: 50px;
+    text-transform: uppercase;
+    letter-spacing: 10px;
+    background-color: rgb(48, 48, 48);
+    border-radius: 5px;
+}
 
+.container.character-svg svg {
+    /* position: relative; */
+    width: 100%;
+    height: 100%;
+    /* background-color: blue; */
+    /* padding: 100px; */
+    margin: 0px;
+}
+
+.svg-text-line {
+    fill: none;
+    stroke-width: 10;
+    stroke-linejoin: round;
+    stroke-linecap: round;
+    stroke-dasharray: 0 1000;
+    stroke-dashoffset: 0;
+    position: absolute;
+    left: 0px;
+    transform: translate(40px,-10px) scale(0.8);
+}
+
+.svg-text-line:nth-child(4n + 1) {
+    stroke: rgb(39, 135, 238);
+    animation: character2-svg-line1 7s infinite forwards;
+}
+.svg-text-line:nth-child(4n + 2) {
+    stroke: rgb(249, 189, 56);
+    animation: character2-svg-line2 7s infinite forwards;
+}
+.svg-text-line:nth-child(4n + 3) {
+    stroke: rgb(235, 61, 50);
+    animation: character2-svg-line3 7s infinite forwards;
+}
+.svg-text-line:nth-child(4n + 4) {
+    stroke: rgb(47, 169, 92);
+    animation: character2-svg-line4 7s infinite forwards;
+}
+
+@keyframes character2-svg-line1 {
+    0%{
+        fill: aliceblue;
+        fill-opacity: 0;
+    }
+    50%{
+        fill: aliceblue;
+        fill-opacity: 0;
+    }
+    100% {
+        stroke-dashoffset: 1000;
+        stroke-dasharray: 200 300;
+        /* stroke: aliceblue; */
+        fill: aliceblue;
+        stroke-width: 0px;
+    }
+}
+@keyframes character2-svg-line2 {
+    0%{
+        fill: aliceblue;
+        fill-opacity: 0;
+    }
+    50%{
+        fill: aliceblue;
+        fill-opacity: 0;
     }
 
-    to {
+    100% {
+        stroke-dashoffset: 1200;
+        stroke-dasharray: 200 300;
+        /* stroke: aliceblue; */
+        fill: aliceblue;
+        stroke-width: 0px;
+    }
+}
+@keyframes character2-svg-line3 {
+    0%{
+        fill: aliceblue;
+        fill-opacity: 0;
+    }
+    50%{
+        fill: aliceblue;
+        fill-opacity: 0;
+    }
 
+    100% {
+        stroke-dashoffset: 1400;
+        stroke-dasharray: 200 300;
+        /* stroke: aliceblue; */
+        fill: aliceblue;
+        stroke-width: 0px;
+    }
+}
+@keyframes character2-svg-line4 {
+    0%{
+        fill: aliceblue;
+        fill-opacity: 0;
+    }
+    50%{
+        fill: aliceblue;
+        fill-opacity: 0;
+    }
+
+    100% {
+        stroke-dashoffset: 1600;
+        stroke-dasharray: 200 300;
+        /* stroke: aliceblue; */
+        fill: aliceblue;
+        stroke-width: 0px;
+    }
+}
+@keyframes character2-svg-fullline {
+    100% {
+        stroke-dashoffset: 1800;
+        stroke-dasharray: 1000 0;
     }
 }
