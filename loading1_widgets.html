@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <title>anim0_loading0 Progress Bar</title>
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <link
+            rel="stylesheet"
+            href="node_modules/bootstrap/dist/css/bootstrap.min.css"
+        />
+        <link rel="stylesheet" href="css/loading1_widgets.css" />
+    </head>
+    <body>
+        <br />
+        <div class="container">
+            <div
+                class="alert alert-warning alert-dismissible fade show"
+                role="alert"
+            >
+                <strong>js加载测试</strong>
+                (如果可以关闭此提醒则
+                <code>jquery, bootstrap.js</code> 加载成功)
+                <button
+                    type="button"
+                    class="close"
+                    data-dismiss="alert"
+                    aria-label="Close"
+                >
+                    <span aria-hidden="true">&times;</span>
+                </button>
+            </div>
+            <div
+                class="alert alert-success alert-dismissible fade show"
+                role="alert"
+            >
+                <strong>CSS 动画1 Loading</strong>
+                <hr />
+                小组件,  来自b站教程 <code><a href="https://www.bilibili.com/video/BV1r7411E7pS">https://www.bilibili.com/video/BV1r7411E7pS</a></code>
+            </div>
+
+            <div class="container loading loading1">
+                <div class="row">
+                    <div class="widget col col-lg-4 col-md-6">
+                        <div class="loading loading1">
+                            <div class="wrapper">
+                                <svg class="item" width="200" height="200">
+                                    <circle
+                                        class="circle"
+                                        cx="100"
+                                        cy="100"
+                                        r="60"
+                                    ></circle>
+                                </svg>
+                            </div>
+                            widget1
+                        </div>
+                    </div>
+                    <div class="widget col col-lg-4 col-md-6">
+                        <div class="loading loading2">
+                            <div class="wrapper">
+                                <div class="item"></div>
+                                <div class="item"></div>
+                                <div class="item"></div>
+                                <div class="item"></div>
+                                <div class="item"></div>
+                            </div>
+                            widget2
+                        </div>
+                    </div>
+                    <div class="widget col col-lg-4 col-md-6">
+                        <div class="loading loading3">
+                            <div class="wrapper">
+                                <div class="item"></div>
+								<div class="item"></div>
+								<div class="item"></div>
+								<div class="item"></div>
+								<div class="item"></div>
+                            </div>
+                            widget3
+                        </div>
+                    </div>
+
+                    <div class="widget col col-lg-4 col-md-6">
+                        <div class="loading loading4">
+                            <div class="wrapper">
+                                tag
+                            </div>
+                            widget4
+                        </div>
+                    </div>
+                    <div class="widget col col-lg-4 col-md-6">
+                        <div class="loading loading5">
+                            <div class="wrapper">
+                                tag
+                            </div>
+                            widget5
+                        </div>
+                    </div>
+                    <div class="widget col col-lg-4 col-md-6">
+                        <div class="loading loading6">
+                            <div class="wrapper">
+                                tag
+                            </div>
+                            widget6
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <script src="node_modules/jquery/dist/jquery.slim.min.js"></script>
+        <script src="node_modules/popper/farms/ /dist/umd/popper.min.js"></script>
+        <script src="node_modules/bootstrap/dist/js/bootstrap.min.js"></script>
+    </body>
+</html>

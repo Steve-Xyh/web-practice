@@ -1,0 +1,205 @@
+body {
+    background-color: aliceblue;
+}
+
+.alert {
+    border-radius: 10px;
+}
+
+.container.loading {
+    padding: 10px;
+    border-radius: 10px;
+    /* background-color: #161616; */
+    background-color: #ddd;
+}
+
+.row {
+    align-content: center;
+}
+
+.widget.col {
+    margin-left: 100;
+    display: inline-block;
+    text-align: center;
+    color: aliceblue;
+    text-transform: uppercase;
+    font-weight: 700;
+    /* background-color: #222; */
+}
+
+.widget.col .loading {
+    margin: 10px;
+    padding: 10px;
+    border-radius: 5px;
+    background-color: #222;
+    height: 300px;
+}
+
+.widget.col .loading1 .item {
+    animation: widget1 2s infinite 0s;
+    display: flex;
+    margin: auto;
+    stroke: #70baff;
+    stroke-dasharray: 94.2477795;
+    stroke-width: 10px;
+    fill: none;
+}
+
+@keyframes widget1 {
+    from {
+        transform: rotate(0);
+    }
+
+    to {
+        transform: rotate(360deg);
+    }
+}
+
+.loading .wrapper {
+    height: 250px;
+    min-width: 300px;
+    margin: 0 auto;
+    font-size: 0;
+    /* background-color: aliceblue; */
+}
+
+.loading2 .wrapper .item {
+    background-color: #70baff;
+    display: inline-block;
+    height: 0px;
+    width: 15px;
+    margin: 0 5px;
+    padding: 0;
+    font-size: 0;
+    transform: translateY(100px);
+}
+
+.loading2 .wrapper .item::before {
+    background-color: #70baff;
+    content: "";
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    height: 50px;
+    width: 15px;
+    border-radius: 7.5px;
+    border-bottom-left-radius: 0;
+    border-bottom-right-radius: 0;
+    /* animation: widget2 2s infinite 0s; */
+}
+.loading2 .wrapper .item::after {
+    background-color: #70baff;
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 50px;
+    width: 15px;
+    border-radius: 7.5px;
+    border-top-left-radius: 0;
+    border-top-right-radius: 0;
+
+    /* animation: widget2 2s infinite 0s; */
+}
+
+.loading2 .wrapper .item:nth-child(1)::before {
+    animation: widget2 2s infinite 0s;
+}
+.loading2 .wrapper .item:nth-child(1)::after {
+    animation: widget2 2s infinite 0s;
+}
+.loading2 .wrapper .item:nth-child(2)::before {
+    animation: widget2 2s infinite 0.2s;
+}
+.loading2 .wrapper .item:nth-child(2)::after {
+    animation: widget2 2s infinite 0.2s;
+}
+.loading2 .wrapper .item:nth-child(3)::before {
+    animation: widget2 2s infinite 0.4s;
+}
+.loading2 .wrapper .item:nth-child(3)::after {
+    animation: widget2 2s infinite 0.4s;
+}
+.loading2 .wrapper .item:nth-child(4)::before {
+    animation: widget2 2s infinite 0.6s;
+}
+.loading2 .wrapper .item:nth-child(4)::after {
+    animation: widget2 2s infinite 0.6s;
+}
+.loading2 .wrapper .item:nth-child(5)::before {
+    animation: widget2 2s infinite 0.8s;
+}
+.loading2 .wrapper .item:nth-child(5)::after {
+    animation: widget2 2s infinite 0.8s;
+}
+
+@keyframes widget2 {
+    0% {
+        height: 50px;
+    }
+    40% {
+        height: 7.5px;
+    }
+    60% {
+        height: 7.5px;
+    }
+    100% {
+        height: 50px;
+    }
+}
+
+.loading3 .wrapper .item {
+    background-color: #ffffff00;
+    display: inline-block;
+    height: 15px;
+    width: 15px;
+    border-radius: 7.5px;
+    margin: 0 5px;
+    padding: 0;
+    font-size: 0;
+	transform: translateY(100px);
+}
+
+.loading3 .wrapper .item::after {
+    background-color: #70baff;
+    content: "";
+    position: absolute;
+    bottom: 0px;
+    left: 0px;
+    height: 15px;
+    width: 15px;
+    border-radius: 7.5px;
+    padding: 0;
+    font-size: 0;
+}
+
+.loading3 .wrapper .item:nth-child(1)::after {
+    animation: widget3 2s infinite 0s;
+}
+.loading3 .wrapper .item:nth-child(2)::after {
+    animation: widget3 2s infinite 0.2s;
+}
+.loading3 .wrapper .item:nth-child(3)::after {
+    animation: widget3 2s infinite 0.4s;
+}
+.loading3 .wrapper .item:nth-child(4)::after {
+    animation: widget3 2s infinite 0.6s;
+}
+.loading3 .wrapper .item:nth-child(5)::after {
+    animation: widget3 2s infinite 0.8s;
+}
+
+@keyframes widget3 {
+    0% {
+        transform: scale(0);
+    }
+    40% {
+        transform: scale(1);
+    }
+    60% {
+        transform: scale(1);
+    }
+    100% {
+        transform: scale(0);
+    }
+}
