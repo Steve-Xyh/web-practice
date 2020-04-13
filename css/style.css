@@ -38,13 +38,12 @@ body {
 
 .text {
     fill: none;
-    stroke-width: 1;
+    stroke-width: 5;
     stroke-linejoin: round;
     stroke-linecap: round;
     stroke-dasharray: 0 300;
     stroke-dashoffset: 0;
-    box-shadow:    0px 0px 20px rgba(255, 255, 255, 0.66)
-
+    box-shadow: 0px 0px 20px rgba(255, 255, 255, 0.66);
 }
 
 .text:nth-child(4n + 1) {
@@ -113,7 +112,7 @@ body {
 
 .svg-text-line {
     fill: none;
-    stroke-width: 5;
+    stroke-width: 15;
     stroke-linejoin: round;
     stroke-linecap: round;
     stroke-dasharray: 0 1000;
@@ -277,93 +276,75 @@ body {
     }
 }
 
-.container.character-spotlight-neon {
-    font-size: 120px;
+* {
+    margin: 0px;
+    padding: 0px;
+}
+
+.container.character-neon {
+    font-size: 8vh;
     font-weight: lighter;
     display: flex;
     margin: 0px;
-    margin-bottom: 10px;
-    padding: 30px;
+    padding: 10px;
     text-transform: uppercase;
     letter-spacing: 10px;
     background-color: rgb(48, 48, 48);
     border-radius: 5px;
 }
 
-.container.character-spotlight-neon svg {
-    /* position: relative; */
-    width: 100%;
-    height: 100%;
-    /* background-color: blue; */
-    /* padding: 100px; */
+.character-neon-wrapper {
+    /* background-color: aqua; */
+    display: inline;
+    margin: auto;
+    padding: 20px;
+    text-align: center center;
+    animation: character4-neon 5s linear infinite;
+}
+
+.text-neon {
+    display: inline;
     margin: 0px;
+    padding: 0px;
+    /* text-transform: none; */
+    color: aliceblue;
+    text-align: center center;
+    text-shadow: 0px 0px 20px rgb(255, 255, 255);
+    /* background-color: antiquewhite; */
+    animation: character4-neon 1.2s linear infinite;
 }
 
-#logo-spotlight-neon {
-    fill: #333;
+.text-neon:nth-child(1) {
+    animation-delay: 0s;
 }
-
-.svg-spotlight-neon-light {
-    transform: translate(-33px, -11px);
-    fill: none;
-    /* fill: aliceblue; */
-    /* animation: character4-spotlight 6s infinite 0s; */
-    /* animation: character4-neon 6s infinite 0s; */
-
+.text-neon:nth-child(2) {
+    animation-delay: 0.2s;
 }
-.svg-spotlight-neon-light:nth-child(2n) {
-    transform: translate(-33px, -11px);
-    /* fill: none; */
-    fill: aliceblue;
-    animation: character4-spotlight 6s infinite 0s;
+.text-neon:nth-child(3) {
+    animation-delay: 0.4s;
 }
-
-.svg-spotlight-neon-light:nth-child(2n+2) {
-    transform: translate(-33px, -11px);
-    /* fill: #333; */
-    /* animation: character4-neon 6s infinite 0s; */
+.text-neon:nth-child(4) {
+    animation-delay: 0.6s;
 }
-
-@keyframes character4-spotlight {
-    0% {
-        -webkit-clip-path: ellipse(100px 100px at 0% 50%);
-        clip-path: ellipse(100px 100px at 0% 50%);
-        fill: none;
-    }
-    30% {
-        -webkit-clip-path: ellipse(100px 100px at 0% 50%);
-        clip-path: ellipse(100px 100px at 0% 50%);
-        fill: aliceblue;
-    }
-    50% {
-        -webkit-clip-path: ellipse(100px 100px at 87% 50%);
-        clip-path: ellipse(100px 100px at 86% 50%);
-    }
-    70% {
-        -webkit-clip-path: ellipse(100px 100px at 50% 50%);
-        clip-path: ellipse(100px 100px at 50% 50%);
-    }
-    100% {
-        -webkit-clip-path: ellipse(1000px 1000px at 50% 50%);
-        clip-path: ellipse(1000px 1000px at 50% 50%);
-    }
+.text-neon:nth-child(5) {
+    animation-delay: 0.8s;
+}
+.text-neon:nth-child(6) {
+    animation-delay: 1s;
 }
 
 @keyframes character4-neon {
-    /* 0% {
+    0%,
+    80% {
+        color: #333;
+        text-shadow: none;
     }
-    10% {
-    }
-    20% {
-    }
-    30% {
-    } */
     100% {
-        fill: aqua;
-        box-shadow: 0 0 10px #fff,
-                    0 0 20px #fff,
-                    0 0 40px #fff,
-                    0 0 80px #fff,
-                    0 0 160px #fff;
+        color: #fff;
+        text-shadow:    0 0 10px #fff, 
+                        0 0 20px #fff, 
+                        0 0 40px #fff, 
+                        0 0 80px #fff,
+                        0 0 160px #fff;
     }
 }
